@@ -1,18 +1,18 @@
 # Tutorial Hyperledger Fabric SDK Go: How to build your first app?
 
-Source: [chainhero.io/2018/06/tutorial-build-blockchain-app-v1-1-0 REQUIRED](REQUIRED)
+Source: [REQUIRED](REQUIRED)
 
 This tutorial will introduce you to the Hyperledger Fabric Go SDK and allows you to build a simple application using the blockchain principle.
 
-**This tutorial uses Hyperledger Fabric version 2.1.0**
+**This tutorial uses Hyperledger Fabric version 2.2.0**
 
 This is the **first part** of this tutorial. The basics SDK features will be shown, but the second part is scheduled to demonstrate a more complex application.
 
 ## 1. Prerequisites
 
-This tutorial won’t explain in detail how Hyperledger Fabric works. I will just give some tips to understand the general behavior of the framework. If you want to get a full explanation of the tool, go to the official [documentation](https://hyperledger-fabric.readthedocs.io/en/release-2.1/) there is a lot of work there that explains what kind of blockchain Hyperledger Fabric is.
+This tutorial won’t explain in detail how Hyperledger Fabric works. I will just give some tips to understand the general behavior of the framework. If you want to get a full explanation of the tool, go to the official [documentation](https://hyperledger-fabric.readthedocs.io/en/release-2.2/) there is a lot of work there that explains what kind of blockchain Hyperledger Fabric is.
 
-This tutorial has been made on **Ubuntu 16.04** but the Hyperledger Fabric framework is compatible with Mac OS X, Windows and other Linux distributions.
+This tutorial has been made on **Ubuntu 20.04** but the Hyperledger Fabric framework is compatible with Mac OS X, Windows and other Linux distributions.
 
 We will use the **Go** language to design our first application because the Hyperledger Fabric has been also built in Go and the Fabric SDK Go is really simple to use. In addition, the chaincode (smart contract) can be written in Go too. So the full-stack will be only in Go! Awesome right ? However, if you are go phobic (even if you shouldn't), there are other SDK like for NodeJS, Java or Python but we won't discuss about them here.
 
@@ -22,13 +22,13 @@ Hyperledger Fabric uses **Docker** to easily deploy a blockchain network. In add
 
 > Hyperledger Fabric is a platform for distributed ledger solutions underpinned by a modular architecture delivering high degrees of confidentiality, resiliency, flexibility and scalability. It is designed to support pluggable implementations of different components and accommodate the complexity and intricacies that exist across the economic ecosystem.
 
-See the full explanation from the official documentation in the introduction part: [Hyperledger Fabric Blockchain](https://hyperledger-fabric.readthedocs.io/en/release-2.1/blockchain.html)
+See the full explanation from the official documentation in the introduction part: [Hyperledger Fabric Blockchain](https://hyperledger-fabric.readthedocs.io/en/release-2.2/blockchain.html)
 
-![Blockchain Concensus](https://hyperledger-fabric.readthedocs.io/en/release-2.1/_images/consensus.png)
+![Blockchain Concensus](https://hyperledger-fabric.readthedocs.io/en/release-2.2/_images/consensus.png)
 
 ## 3. Installation guide
 
-This tutorial was made on **Ubuntu 16.04**, but there is help for Windows, Mac OS X and other Linux distributions users.
+This tutorial was made on **Ubuntu 20.04**, but there is help for Windows, Mac OS X and other Linux distributions users.
 
 ### a. Docker
 
@@ -155,12 +155,12 @@ mkdir -p $GOPATH/src/github.com/chainHero/heroes-service && \
 cd $GOPATH/src/github.com/chainHero/heroes-service
 ```
 
-To get the `fixtures` folder, you can either follow this command line, which will install and use subversion to get the folder from this repository. Or download the [zip file from Github](https://github.com/chainHero/heroes-service/archive/v2.1.0.zip) and extract only the `fixtures` folder.
+To get the `fixtures` folder, you can either follow this command line, which will install and use subversion to get the folder from this repository. Or download the [zip file from Github](https://github.com/chainHero/heroes-service/archive/v2.2.0.zip) and extract only the `fixtures` folder.
 
 ```bash
 sudo apt install -y subversion && \
 cd $GOPATH/src/github.com/chainHero/heroes-service && \
-svn checkout https://github.com/chainHero/heroes-service/branches/2.1.0/fixtures &&
+svn checkout https://github.com/chainHero/heroes-service/branches/2.2.0/fixtures &&
 rm -rf fixtures/.svn
 ```
 
@@ -1579,7 +1579,7 @@ We can see the change by going back to the `home` page.
 ## 7. References
 
 - [Hyperledger website](https://www.hyperledger.org/)
-- [Hyperledger Fabric online documentation](https://hyperledger-fabric.readthedocs.io/en/release-2.1/)
+- [Hyperledger Fabric online documentation](https://hyperledger-fabric.readthedocs.io/en/release-2.2/)
 - [Hyperledger Fabric on github](https://github.com/hyperledger/fabric)
 - [Hyperledger Fabric Certificate Authority on github](https://github.com/hyperledger/fabric-ca)
 - [Hyperledger Fabric SDK Go on github](https://github.com/hyperledger/fabric-sdk-go)
